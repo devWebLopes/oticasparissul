@@ -6,9 +6,10 @@
   --paper: 39 38% 95%;
   --paper-deep: 38 30% 90%;
   --card: 0 0% 100%;
-  --teal: 183 44% 35%;
-  --teal-deep: 184 47% 25%;
-  --teal-wash: 183 32% 88%;
+  /* Azul Paris: extraído do tom principal do logo da marca. */
+  --teal: 242 63% 30%;
+  --teal-deep: 242 64% 21%;
+  --teal-wash: 240 45% 92%;
   --coral: 13 73% 64%;
   --coral-soft: 15 71% 90%;
   --line: 210 18% 79%;
