@@ -2,6 +2,8 @@ import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'rea
 import { ArrowDownRight, ArrowRight, Check, Clock3, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
+const logoSrc = `${import.meta.env.BASE_URL}oticas-paris-sul-logo.png`;
+
 type RevealProps = {
   children: ReactNode;
   className?: string;
@@ -58,7 +60,7 @@ function Header() {
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`} data-testid="site-header">
       <div className="nav-shell">
         <a className="brand" href="#inicio" onClick={closeMenu} data-testid="link-brand">
-          <span className="brand-mark" aria-hidden="true" />
+          <img className="brand-logo" src={logoSrc} alt="" aria-hidden="true" />
           <span className="brand-text">
             <strong>Óticas Paris Sul</strong>
             <span>São Leopoldo · RS</span>
@@ -99,7 +101,9 @@ function Hero() {
         </Reveal>
         <div className="hero-art" aria-hidden="true">
           <div className="lens-orbit" />
-          <div className="lens-center" />
+          <div className="lens-center">
+            <img className="hero-logo" src={logoSrc} alt="" />
+          </div>
           <span className="art-label">Olhar atento</span>
         </div>
         <a className="hero-scroll" href="#cuidado" data-testid="link-scroll-cuidado">Deslize</a>
