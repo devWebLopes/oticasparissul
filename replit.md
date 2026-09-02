@@ -1,6 +1,6 @@
-# [Project name]
+# Óticas Paris Sul
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Site institucional mobile-first da Óticas Paris Sul, com serviços ópticos, marcas, acompanhamento de pedido, contatos das lojas e motion acessível.
 
 ## Run & Operate
 
@@ -22,23 +22,31 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/oticas-paris-sul/src/App.tsx` — página institucional e interações.
+- `artifacts/oticas-paris-sul/src/index.css` — tokens de marca, layout responsivo e sistema de motion.
+- `artifacts/oticas-paris-sul/index.html` — metadados SEO, Open Graph e JSON-LD de negócio local.
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- A página é frontend-only no primeiro build: o campo de pedido informa com transparência quando a consulta online não está conectada a um sistema real.
+- O layout usa CSS mobile-first e uma arte abstrata de lente em CSS para manter a página leve e evitar dependência de mídia externa.
+- As animações são progressivas e desligadas para quem prefere movimento reduzido.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Apresenta o posicionamento, serviços e marcas da Óticas Paris Sul.
+- Direciona visitantes para pedido, lojas, telefone, e-mail, mapas, WhatsApp e Instagram.
+- Oferece navegação fixa com menu móvel e microinterações acessíveis.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- A experiência deve ser pensada mobile-first.
+- O usuário pediu efeitos de motion com acessibilidade AA e suporte obrigatório a reduced motion.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- O workflow da aplicação fornece `PORT` e `BASE_PATH`; builds manuais precisam desses valores.
+- Mudanças no contrato de pedidos exigem backend real antes de remover a mensagem transparente de consulta local.
 
 ## Pointers
 

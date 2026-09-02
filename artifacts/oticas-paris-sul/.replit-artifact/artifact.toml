@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Óticas Paris Sul"
+description = "Site institucional mobile-first da Óticas Paris Sul, com serviços ópticos, marcas, acompanhamento de pedido, contatos das lojas e experiências de motion acessíveis."
+version = "1.0.0"
+id = "artifacts/oticas-paris-sul"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24024
+
+[services.development]
+run = "pnpm --filter @workspace/oticas-paris-sul run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/oticas-paris-sul", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/oticas-paris-sul/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24024"
+BASE_PATH = "/"
