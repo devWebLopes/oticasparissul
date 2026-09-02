@@ -2,7 +2,8 @@ import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'rea
 import { ArrowDownRight, ArrowRight, Check, Clock3, Instagram, Mail, MapPin, Phone } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 
-const logoSrc = `${import.meta.env.BASE_URL}oticas-paris-sul-logo.png`;
+const assetSrc = (filename: string) => `${import.meta.env.BASE_URL}${filename}`;
+const logoSrc = assetSrc('oticas-paris-sul-logo.png');
 
 type RevealProps = {
   children: ReactNode;
@@ -165,7 +166,16 @@ function ServicesSection() {
   );
 }
 
-const brands = ['Carmim', 'Rayban', 'Technos', 'Colcci', 'Next', 'Orient', 'Mormaii', 'Ecko'];
+const brands = [
+  { name: 'Carmim', filename: 'brand-carmim.png' },
+  { name: 'Ray-Ban', filename: 'brand-rayban.png' },
+  { name: 'Technos', filename: 'brand-technos.png' },
+  { name: 'Colcci', filename: 'brand-colcci.png' },
+  { name: 'Next', filename: 'brand-next.png' },
+  { name: 'Orient', filename: 'brand-orient.png' },
+  { name: 'Mormaii', filename: 'brand-mormaii.png' },
+  { name: 'Ecko', filename: 'brand-ecko.png' },
+];
 
 function BrandsSection() {
   return (
@@ -178,7 +188,11 @@ function BrandsSection() {
         </Reveal>
         <Reveal delay={100}>
           <ul className="brand-strip" aria-label="Marcas disponíveis">
-            {brands.map((brand) => <li key={brand} className="brand-pill" data-testid={`badge-brand-${brand.toLowerCase()}`}>{brand}</li>)}
+            {brands.map((brand) => (
+              <li key={brand.name} className="brand-pill" data-testid={`badge-brand-${brand.name.toLowerCase().replaceAll('-', '')}`}>
+                <img src={assetSrc(brand.filename)} alt={brand.name} loading="lazy" />
+              </li>
+            ))}
           </ul>
         </Reveal>
       </div>
