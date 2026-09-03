@@ -12,6 +12,7 @@
 | **codegen-and-types** | Orval, Zod, geração de tipos e clientes tipados | [codegen-and-types.md](codegen-and-types.md) |
 | **accessibility** | Padrões A11y, reduced motion, ARIA, contraste | [accessibility.md](accessibility.md) |
 | **devops-and-workspaces** | pnpm workspaces, builds, typecheck e pipelines | [devops-and-workspaces.md](devops-and-workspaces.md) |
+| **seo** | SEO, GEO e dados estruturados (JSON-LD, robots, sitemap, llms.txt) | [seo.md](seo.md) |
 
 ## Como Usar
 
