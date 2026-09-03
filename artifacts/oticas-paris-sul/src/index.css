@@ -204,7 +204,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .whatsapp-fab { position: fixed; right: 1rem; bottom: 1rem; z-index: 40; display: inline-flex; align-items: center; gap: .7rem; padding: .75rem 1rem .75rem .78rem; border: 1px solid hsl(var(--white) / .35); border-radius: 999px; background: hsl(158 56% 35%); color: hsl(var(--white)); font-size: .8rem; font-weight: 700; box-shadow: 0 9px 25px hsl(158 56% 20% / .24); animation: fab-pulse 2.8s ease-out 1; transition: transform var(--motion-fast) var(--ease-out); }
 .whatsapp-fab:hover { transform: translateY(-3px); }
-.fab-icon { width: 1.6rem; height: 1.6rem; display: grid; place-items: center; border: 1px solid hsl(var(--white) / .65); border-radius: 50%; font-size: .72rem; }
+.fab-icon { width: 1.6rem; height: 1.6rem; display: grid; place-items: center; overflow: hidden; border: 1px solid hsl(var(--white) / .65); border-radius: 50%; background: hsl(var(--white)); font-size: .72rem; }
+.fab-icon img { width: 2.65rem; height: 2.4rem; max-width: none; object-fit: cover; transform: scale(1.28); }
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity var(--motion-slow) var(--ease-out), transform var(--motion-slow) var(--ease-out); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .stagger-1 { transition-delay: 90ms; } .stagger-2 { transition-delay: 180ms; } .stagger-3 { transition-delay: 270ms; } .stagger-4 { transition-delay: 360ms; }

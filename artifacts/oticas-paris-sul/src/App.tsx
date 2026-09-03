@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
 import { ArrowDownRight, ArrowRight, Check, Clock3, Instagram, Mail, MapPin, Phone } from 'lucide-react';
-import { FaWhatsapp } from 'react-icons/fa';
 
 const assetSrc = (filename: string) => `${import.meta.env.BASE_URL}${filename}`;
 const logoSrc = assetSrc('oticas-paris-sul-logo.png');
+const whatsappLogoSrc = assetSrc('whatsapp-logo.png');
 
 type RevealProps = {
   children: ReactNode;
@@ -258,7 +258,7 @@ function LocationCard({ label, name, address, phone, phoneHref, whatsapp, whatsa
         <a className="location-address" href={mapHref} target="_blank" rel="noreferrer" data-testid={`link-map-${label.toLowerCase().replaceAll(' ', '-')}`}><MapPin size={16} aria-hidden="true" /> {address}</a>
         <div className="location-links">
           <a href={`tel:${phoneHref}`} data-testid={`link-phone-${label.toLowerCase().replaceAll(' ', '-')}`}><Phone size={15} aria-hidden="true" /> {phone}</a>
-          <a href={whatsappHref} target="_blank" rel="noreferrer" data-testid={`link-whatsapp-${label.toLowerCase().replaceAll(' ', '-')}`}><span aria-hidden="true" className="fab-icon"><FaWhatsapp /></span> {whatsapp} (WhatsApp)</a>
+          <a href={whatsappHref} target="_blank" rel="noreferrer" data-testid={`link-whatsapp-${label.toLowerCase().replaceAll(' ', '-')}`}><span aria-hidden="true" className="fab-icon"><img src={whatsappLogoSrc} alt="" /></span> {whatsapp} (WhatsApp)</a>
           <a href={`mailto:${email}`} data-testid={`link-email-${label.toLowerCase().replaceAll(' ', '-')}`}><Mail size={15} aria-hidden="true" /> {email}</a>
         </div>
         <p className="location-hours"><Clock3 size={15} aria-hidden="true" /> {hours}</p>
@@ -321,7 +321,7 @@ function Footer() {
 function WhatsAppFab() {
   return (
     <a className="whatsapp-fab" href="https://wa.me/5551991706048" target="_blank" rel="noreferrer" aria-label="Falar com a Óticas Paris Sul pelo WhatsApp" data-testid="link-floating-whatsapp">
-      <span className="fab-icon" aria-hidden="true"><FaWhatsapp /></span><span>Fale pelo WhatsApp</span>
+      <span className="fab-icon" aria-hidden="true"><img src={whatsappLogoSrc} alt="" /></span><span>Fale pelo WhatsApp</span>
     </a>
   );
 }
