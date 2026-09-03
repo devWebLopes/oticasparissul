@@ -77,7 +77,6 @@ function Header() {
       </div>
       <nav id="mobile-navigation" className={`mobile-nav ${open ? 'is-open' : ''}`} aria-label="Navegação móvel">
         {navItems.map((item) => <a key={item.href} href={item.href} onClick={closeMenu} data-testid={`link-mobile-${item.label.toLowerCase()}`}>{item.label}</a>)}
-        <a className="button button-primary" href="#lojas" onClick={closeMenu} data-testid="link-mobile-contato">Fale com a loja <ArrowRight size={15} aria-hidden="true" /></a>
       </nav>
     </header>
   );
