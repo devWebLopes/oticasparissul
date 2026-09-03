@@ -206,7 +206,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .whatsapp-fab:hover { transform: translateY(-3px); filter: drop-shadow(0 10px 15px hsl(var(--ink) / .24)); }
 .fab-icon { width: 1.6rem; height: 1.6rem; display: grid; place-items: center; overflow: hidden; border: 1px solid hsl(var(--white) / .65); border-radius: 50%; background: hsl(var(--white)); font-size: .72rem; }
 .fab-icon img { width: 100%; height: 100%; max-width: none; object-fit: contain; }
-.whatsapp-fab .fab-icon { width: 100%; height: 100%; border: 0; background: transparent; }
+.whatsapp-fab .whatsapp-fab-logo { width: 82%; height: 82%; }
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity var(--motion-slow) var(--ease-out), transform var(--motion-slow) var(--ease-out); }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 .stagger-1 { transition-delay: 90ms; } .stagger-2 { transition-delay: 180ms; } .stagger-3 { transition-delay: 270ms; } .stagger-4 { transition-delay: 360ms; }
