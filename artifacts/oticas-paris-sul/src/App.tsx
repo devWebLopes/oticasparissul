@@ -3,7 +3,7 @@ import { ArrowDownRight, ArrowRight, Check, Clock3, Instagram, Mail, MapPin, Pho
 
 const assetSrc = (filename: string) => `${import.meta.env.BASE_URL}${filename}`;
 const logoSrc = assetSrc('oticas-paris-sul-logo.png');
-const whatsappLogoSrc = assetSrc('whatsapp-logo.png');
+const whatsappLogoSrc = assetSrc('whatsapp-icon.png');
 
 type RevealProps = {
   children: ReactNode;
@@ -320,8 +320,8 @@ function Footer() {
 
 function WhatsAppFab() {
   return (
-    <a className="whatsapp-fab" href="https://wa.me/5551991706048" target="_blank" rel="noreferrer" aria-label="Falar com a Óticas Paris Sul pelo WhatsApp" data-testid="link-floating-whatsapp">
-      <span className="fab-icon" aria-hidden="true"><img src={whatsappLogoSrc} alt="" /></span><span>Fale pelo WhatsApp</span>
+    <a className="whatsapp-fab" href="https://wa.me/5551991706048" target="_blank" rel="noreferrer" aria-label="Falar com a Óticas Paris Sul pelo WhatsApp" title="Falar com a Óticas Paris Sul pelo WhatsApp" data-testid="link-floating-whatsapp">
+      <span className="fab-icon" aria-hidden="true"><img src={whatsappLogoSrc} alt="" /></span>
     </a>
   );
 }
