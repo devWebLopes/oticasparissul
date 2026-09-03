@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm run build",
+  "buildCommand": "pnpm run typecheck && pnpm --filter @workspace/oticas-paris-sul run build",
   "outputDirectory": "artifacts/oticas-paris-sul/dist/public",
   "installCommand": "pnpm install",
   "framework": null,
