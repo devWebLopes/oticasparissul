@@ -10,43 +10,119 @@
     <meta name="theme-color" content="#f4efe4" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Óticas Paris Sul" />
-    <meta property="og:title" content="Óticas Paris Sul - Sua visão em primeiro lugar" />
-    <meta property="og:description" content="Tecnologia de ponta e atendimento personalizado para cuidar da sua visão em São Leopoldo." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://oticasparissul.com.br/" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:title" content="Óticas Paris Sul - Sua visão em primeiro lugar" />
+    <meta property="og:description" content="Sua visão merece o melhor cuidado. Encontre lentes especiais, armações exclusivas e atendimento personalizado na Óticas Paris Sul, em São Leopoldo." />
+    <meta property="og:image" content="https://oticasparissul.com.br/oticas-paris-sul-logo.png" />
+    <meta property="og:image:width" content="150" />
+    <meta property="og:image:height" content="150" />
+    <meta property="og:image:alt" content="Logo da Óticas Paris Sul" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Óticas Paris Sul - Sua visão em primeiro lugar" />
-    <meta name="twitter:description" content="Tecnologia de ponta e atendimento personalizado para cuidar da sua visão em São Leopoldo." />
+    <meta name="twitter:description" content="Sua visão merece o melhor cuidado. Encontre lentes especiais, armações exclusivas e atendimento personalizado na Óticas Paris Sul, em São Leopoldo." />
+    <meta name="twitter:image" content="https://oticasparissul.com.br/oticas-paris-sul-logo.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Optician",
-        "name": "Óticas Paris Sul",
-        "url": "https://oticasparissul.com.br/",
-        "email": "contato@oticasparissul.com.br",
-        "sameAs": ["https://www.instagram.com/oticasparissul/"],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rua Primeiro de Março, 127",
-          "addressLocality": "São Leopoldo",
-          "addressRegion": "RS",
-          "addressCountry": "BR"
-        },
-        "telephone": ["+55-51-3591-3664", "+55-51-99170-6048"],
-        "department": {
-          "@type": "Optician",
-          "name": "Óticas Paris Sul - Filial 01",
-          "email": "parisadm2@oticasparissul.com.br",
-          "telephone": ["+55-51-3037-2600", "+55-51-99324-8789"],
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Rua Independência, 961",
-            "addressLocality": "São Leopoldo",
-            "addressRegion": "RS",
-            "addressCountry": "BR"
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://oticasparissul.com.br/#organization",
+            "name": "Óticas Paris Sul",
+            "url": "https://oticasparissul.com.br/",
+            "email": "contato@oticasparissul.com.br",
+            "telephone": ["+55-51-3591-3664", "+55-51-3037-2600"],
+            "logo": "https://oticasparissul.com.br/oticas-paris-sul-logo.png",
+            "image": "https://oticasparissul.com.br/oticas-paris-sul-logo.png",
+            "sameAs": ["https://www.instagram.com/oticasparissul/"],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Rua Primeiro de Março, 127",
+              "addressLocality": "São Leopoldo",
+              "addressRegion": "RS",
+              "addressCountry": "BR"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://oticasparissul.com.br/#website",
+            "url": "https://oticasparissul.com.br/",
+            "name": "Óticas Paris Sul",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://oticasparissul.com.br/#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://oticasparissul.com.br/#webpage",
+            "url": "https://oticasparissul.com.br/",
+            "name": "Óticas Paris Sul - Sua visão em primeiro lugar",
+            "inLanguage": "pt-BR",
+            "isPartOf": { "@id": "https://oticasparissul.com.br/#website" },
+            "about": { "@id": "https://oticasparissul.com.br/#organization" }
+          },
+          {
+            "@type": "Optician",
+            "@id": "https://oticasparissul.com.br/#store-matriz",
+            "name": "Óticas Paris Sul - Matriz",
+            "url": "https://oticasparissul.com.br/",
+            "email": "contato@oticasparissul.com.br",
+            "telephone": "+55-51-3591-3664",
+            "parentOrganization": { "@id": "https://oticasparissul.com.br/#organization" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Rua Primeiro de Março, 127",
+              "addressLocality": "São Leopoldo",
+              "addressRegion": "RS",
+              "addressCountry": "BR"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "13:00"
+              }
+            ]
+          },
+          {
+            "@type": "Optician",
+            "@id": "https://oticasparissul.com.br/#store-filial-01",
+            "name": "Óticas Paris Sul - Filial 01",
+            "url": "https://oticasparissul.com.br/",
+            "email": "parisadm2@oticasparissul.com.br",
+            "telephone": "+55-51-3037-2600",
+            "parentOrganization": { "@id": "https://oticasparissul.com.br/#organization" },
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Rua Independência, 961",
+              "addressLocality": "São Leopoldo",
+              "addressRegion": "RS",
+              "addressCountry": "BR"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "16:30"
+              }
+            ]
           }
-        }
+        ]
       }
     </script>
   </head>

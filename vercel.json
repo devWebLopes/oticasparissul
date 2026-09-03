@@ -4,6 +4,6 @@
   "installCommand": "pnpm install",
   "framework": null,
   "rewrites": [
-    { "source": "/((?!assets|favicon).*)", "destination": "/index.html" }
+    { "source": "/((?!assets|favicon|robots\\.txt|sitemap\\.xml|llms\\.txt).*)", "destination": "/index.html" }
   ]
 }

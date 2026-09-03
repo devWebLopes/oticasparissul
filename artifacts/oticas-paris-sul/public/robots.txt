@@ -1,2 +1,40 @@
+# ============================================================================
+# robots.txt — Óticas Paris Sul
+# https://oticasparissul.com.br/
+#
+# Política de rastreamento:
+#   - Mecanismos de busca: permitidos (indexação pública).
+#   - Crawlers de IA (GEO): permitidos por padrão. O site é institucional,
+#     público e o objetivo é ser citável por assistentes e respostas de IA.
+#   - Nenhum caminho sensível é publicado neste repositório.
+# ============================================================================
+
 User-agent: *
 Allow: /
+
+# --- Crawlers de IA permitidos (estratégia GEO) -----------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://oticasparissul.com.br/sitemap.xml
