@@ -134,8 +134,8 @@ function CareSection() {
 const services = [
   { number: '01', title: 'Lentes Especiais', description: 'Lentes fotossensíveis, anti-reflexo, blue light e até lentes de contato para melhorar sua visão.' },
   { number: '02', title: 'Armações Exclusivas', description: 'Oferecemos uma ampla seleção de armações das melhores marcas para todos os estilos e necessidades.' },
-  { number: '03', title: 'Montagens em suas armações', description: 'Podemos colacar as melhores lentes em armações que você possua.' },
-  { number: '04', title: 'Gravações', description: 'Personalizamos canetas e outros itens com gravações a lazer.' },
+  { number: '03', title: 'Montagens em suas armações', description: 'Podemos colocar as melhores lentes em armações que você possua.' },
+  { number: '04', title: 'Gravações', description: 'Personalizamos canetas e outros itens com gravações a laser.' },
 ];
 
 function ServicesSection() {
@@ -277,8 +277,8 @@ function LocationsSection() {
           <p>Duas lojas em São Leopoldo para você experimentar, perguntar e sair com a escolha certa.</p>
         </Reveal>
         <div className="locations-grid">
-          <LocationCard label="Matriz" name="Oticas Paris Sul - Matriz" address="Rua Primeiro de Março, 127 - S. Leopoldo" phone="(51) 3591-3664" phoneHref="5135913664" whatsapp="(51) 99170-6048" whatsappHref="https://wa.me/5551991706048" email="contato@oticasparissul.com.br" hours="Segunda a Sexta: 9h às 18h · Sábado: 9h às 13h - Loja da Primeiro de Março" mapHref="https://www.google.com/maps/search/?api=1&query=Rua+Primeiro+de+Março+127+São+Leopoldo+RS" />
-          <LocationCard label="Filial 01" name="Oticas Paris Sul - Filial 01" address="Rua Independência, 961 - S. Leopoldo" phone="(51) 3037-2600 - Filial 01" phoneHref="5130372600" whatsapp="(51) 99324-8789" whatsappHref="https://wa.me/5551993248789" email="parisadm2@oticasparissul.com.br" hours="Segunda a Sexta: 9h às 18h · Sábado: 9h às 16:30h - Loja da Independência" mapHref="https://www.google.com/maps/search/?api=1&query=Rua+Independência+961+São+Leopoldo+RS" />
+          <LocationCard label="Matriz" name="Óticas Paris Sul - Matriz" address="Rua Primeiro de Março, 127 - São Leopoldo/RS" phone="(51) 3591-3664" phoneHref="5135913664" whatsapp="(51) 99170-6048" whatsappHref="https://wa.me/5551991706048" email="contato@oticasparissul.com.br" hours="Segunda a Sexta: 9h às 18h · Sábado: 9h às 13h - Loja da Primeiro de Março" mapHref="https://www.google.com/maps/search/?api=1&query=Rua+Primeiro+de+Março+127+São+Leopoldo+RS" />
+          <LocationCard label="Filial 01" name="Óticas Paris Sul - Filial 01" address="Rua Independência, 961 - São Leopoldo/RS" phone="(51) 3037-2600 - Filial 01" phoneHref="5130372600" whatsapp="(51) 99324-8789" whatsappHref="https://wa.me/5551993248789" email="parisadm2@oticasparissul.com.br" hours="Segunda a Sexta: 9h às 18h · Sábado: 9h às 16h30 - Loja da Independência" mapHref="https://www.google.com/maps/search/?api=1&query=Rua+Independência+961+São+Leopoldo+RS" />
         </div>
       </div>
     </section>
