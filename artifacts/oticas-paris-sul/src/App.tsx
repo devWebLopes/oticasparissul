@@ -70,13 +70,13 @@ function Header() {
         <nav className="desktop-nav" aria-label="Navegação principal">
           {navItems.map((item) => <a key={item.href} href={item.href} data-testid={`link-nav-${item.label.toLowerCase()}`}>{item.label}</a>)}
         </nav>
-        <a className="button button-primary nav-cta" href="#lojas" data-testid="link-nav-agendar">Fale com a loja <ArrowRight size={15} aria-hidden="true" /></a>
         <button className={`menu-toggle ${open ? 'is-open' : ''}`} onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="mobile-navigation" aria-label={open ? 'Fechar menu' : 'Abrir menu'} data-testid="button-mobile-menu">
           <span aria-hidden="true" />
         </button>
       </div>
       <nav id="mobile-navigation" className={`mobile-nav ${open ? 'is-open' : ''}`} aria-label="Navegação móvel">
         {navItems.map((item) => <a key={item.href} href={item.href} onClick={closeMenu} data-testid={`link-mobile-${item.label.toLowerCase()}`}>{item.label}</a>)}
+        <a className="button button-primary" href="#lojas" onClick={closeMenu} data-testid="link-mobile-contato">Fale com a loja <ArrowRight size={15} aria-hidden="true" /></a>
       </nav>
     </header>
   );
