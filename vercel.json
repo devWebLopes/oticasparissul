@@ -1,8 +1,9 @@
 {
-  "buildCommand": "pnpm run build",
-  "outputDirectory": "artifacts/oticas-paris-sul/dist/public",
-  "installCommand": "pnpm install",
+  "buildCommand": "cd ../.. && pnpm install && pnpm run build",
+  "outputDirectory": "dist/public",
+  "installCommand": "echo 'install runs via buildCommand'",
   "framework": null,
+  "rootDirectory": "artifacts/oticas-paris-sul",
   "rewrites": [
     { "source": "/((?!assets|favicon).*)", "destination": "/index.html" }
   ]
